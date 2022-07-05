@@ -1,9 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Login from "./components/Login";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>STaterd clonening disney hotstart</h1>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Login />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
